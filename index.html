@@ -645,6 +645,64 @@
             color: var(--text-secondary);
         }
 
+        /* Industry Insights */
+        .insights-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .insight-block {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .insight-block:hover {
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        .insight-block h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .insight-block p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+
+        .insight-block ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .insight-block ul li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            padding: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .insight-block ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+            font-size: 0.75rem;
+        }
+
+        .insight-block ul li strong {
+            color: var(--text-primary);
+        }
+
         /* Contact / Footer */
         .contact-section {
             text-align: center;
@@ -758,6 +816,7 @@
             <div class="nav-logo">GZH</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">关于</a></li>
+                <li><a href="#insights">行业洞察</a></li>
                 <li><a href="#experience">经历</a></li>
                 <li><a href="#projects">项目</a></li>
                 <li><a href="#awards">荣誉</a></li>
@@ -1117,6 +1176,49 @@
                     <span class="skill-pill">英文写作</span>
                     <span class="skill-pill">公开演讲</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Insights -->
+    <section id="insights">
+        <div class="section-header">
+            <span class="section-tag">Insights</span>
+            <h2>行业洞察</h2>
+            <p>对本地生活服务与餐饮行业的观察与思考</p>
+        </div>
+
+        <div class="insights-container">
+            <div class="insight-block fade-in">
+                <h3>🏪 本地生活服务的核心逻辑</h3>
+                <p>本地生活服务的本质是"供给-匹配-履约"的三角效率优化。平台的价值不在于流量本身，而在于：</p>
+                <ul>
+                    <li><strong>供给端：</strong>帮助商户完成线上化转型（POI、SKU、定价策略），降低信息不对称成本</li>
+                    <li><strong>匹配端：</strong>通过内容（短视频/直播/搜索）与推荐算法，实现"人找店"到"店找人"的效率跃迁</li>
+                    <li><strong>履约端：</strong>核销率、到店体验、复购率的持续优化是 GMV 长期增长的基础</li>
+                </ul>
+            </div>
+
+            <div class="insight-block fade-in">
+                <h3>🍽️ 餐饮行业运营的关键命题</h3>
+                <p>餐饮是本地生活服务中频次最高、供给最分散、竞争最激烈的品类。从行业运营视角看，核心要回答三个问题：</p>
+                <ul>
+                    <li><strong>品类趋势判断：</strong>哪些品类（火锅、茶饮、轻食、地方菜）处于增长期？用户消费行为在如何迁移？需要从平台交易数据、内容消费数据、外部赛道融资趋势中交叉验证</li>
+                    <li><strong>商户分层运营：</strong>头部连锁品牌需要的是品牌营销与流量联动方案（如超级品牌日），腰部商户需要 SKU 优化与达人撮合，尾部新店需要冷启动扶持与工具赋能</li>
+                    <li><strong>标杆案例沉淀：</strong>不做"散点运营"——每个策略必须形成可复制的 SOP，让一个城市的成功模式能在 400+ 城市规模化</li>
+                </ul>
+            </div>
+
+            <div class="insight-block fade-in">
+                <h3>📊 我的视角：数据驱动 × 行业运营</h3>
+                <p>在美团实习中，我深刻体会到：行业运营不是拍脑袋做活动，而是一套"假设→验证→迭代"的科学方法：</p>
+                <ul>
+                    <li><strong>发现问题靠数据：</strong>从 Hive 取数、搭建看板、监控指标异动（GMV 环比、核销率、评价分），第一时间识别增长机会或风险</li>
+                    <li><strong>分析归因靠逻辑：</strong>问题出现后，是供给质量下降？匹配效率降低？还是竞对补贴加码？需要层层拆解、定位根因</li>
+                    <li><strong>推动落地靠协同：</strong>行业运营不可能单打独斗——需要协调市场做促销、产品改功能、销售推商户，跨团队推动能力是核心竞争力</li>
+                    <li><strong>沉淀方法论靠复盘：</strong>每个项目结束后必须输出可复用的框架（分层模型、决策树、Checklist），让个人经验成为团队资产</li>
+                </ul>
+                <p style="margin-top: 1rem; color: var(--primary-light); font-style: italic;">我的能力模型天然匹配行业运营的要求：数学建模训练出的结构化思维 + 美团大模型运营的数据驱动实践 + 大创项目的 B 端客户对接经验 + 组织部从 0 到 1 的活动运营实战。</p>
             </div>
         </div>
     </section>
